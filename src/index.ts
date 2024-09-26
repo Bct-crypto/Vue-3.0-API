@@ -84,7 +84,7 @@ function doUseState<T>(state: T, dispatch: Dispatch<IAction>, obj: T, path: stri
 
     if (type === ObjectType) {
         return Object.defineProperties({}, descriptors)
-    }
+    }    
     return Object.defineProperties([], descriptors)
 }
 
